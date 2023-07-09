@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <button id="openFormButton">Open Booking Form</button>
+
+<div id="bookingFormContainer">
+  <form id="bookingForm">
+    <h3>Hotel Booking Registration Form</h3>
+
+    <div class="form-group">
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="checkInDate">Check-in Date:</label>
+      <input type="date" id="checkInDate" required>
+    </div>
+
+    <div class="form-group">
+      <label for="totalDays">Total No of Days:</label>
+      <input type="number" id="totalDays" required>
+    </div>
+
+    <div class="form-group">
+      <label for="totalPersons">Total No of Persons:</label>
+      <input type="number" id="totalPersons" required>
+    </div>
+
+    <h4>Room Information</h4>
+
+    <div class="form-group">
+      <label for="roomType">Room Type:</label>
+      <select id="roomType">
+        <option value="Delux">Delux Room</option>
+        <option value="Suite">Suite Room</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="amenities">Amenities:</label>
+      <select id="amenities">
+        <option value="AC">AC</option>
+        <option value="Locker">Locker</option>
+      </select>
+    </div>
+
+    <h4>Advance Payment</h4>
+
+    <div class="form-group">
+      <label for="advanceAmount">Advance Amount:</label>
+      <input type="number" id="advanceAmount" required>
+    </div>
+
+    <h4>Additional Charges</h4>
+
+    <div class="form-group">
+      <label for="extraPersons">Per Day Cost for Extra Person:</label>
+      <input type="number" id="extraPersons" value="1000">
+    </div>
+
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+<script src="signup.js"></script>
+
+</body>
+</html>
