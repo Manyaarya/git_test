@@ -1,0 +1,8 @@
+.bgimg{
+    background-image: url("C:\Users\dav\spirit\git_test\image\bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   color: white;
+   height: 550px;
+}
