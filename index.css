@@ -7,23 +7,25 @@
 .searchbar{
     padding-left: 20px;
     
+    
 }
 .logo input[type=text]{
     padding-left: 20px;
     background-color: rgb(229, 229, 240);
     padding-top: 5px;
     padding-bottom: 5px;
-    border:2px solid black;
+    border:2px solid #358f80;
     padding-right: 50px;
     border-radius: 20%;
-    
+    box-shadow: 0.5px 0.5px #78c6a3;
 }
 nav ul{
     
     display:flex;
     padding:20px 0px 20px 0px;
-    background-color: rgb(7, 8, 37);
+    background-color: #ffffff ;
     
+    border-bottom: 3px double #469d89;
     
 }
 
@@ -35,31 +37,37 @@ nav ul li{
     text-transform: uppercase;
     font-weight: 300;
     font-size: larger;
-    
-    
+    text-shadow: 0.5px 0.5px #78c6a3;
+   
 }
 
 a:link{
-    color:white;
-    text-decoration: none;
+    color: #000000;
+    text-decoration:none;
     
 }
 
 a:visited{
-    color:rgb(252, 252, 252);
+    color:#000000;
 
 }
 
 a:hover{
-    color:antiquewhite;
+    color:rgb(207, 0, 155);
+    text-decoration: underline;
+    text-shadow: none;
     
 }
 
 .links{
     display:flex;
     
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-right: 10px;
     padding-right: 50px;
+
+    
 }
 
 .logo{
@@ -72,18 +80,43 @@ a:hover{
 }
 
 .kink{
-    background-color: rgb(223, 223, 236);
+    background-image: url('../git_test/black.avif');
+    background-repeat: repeat;
+    
+  
     display: flex;
-    color: rgb(41, 39, 39);
+    color: #ffffff;
     padding-left: 50px;
     height: 550px;
     
+    
 }
 
+.bigimg{
+  
+
+    margin: 0;
+    
+}
+.bigimg img{
+    
+    height: 545px;
+    margin: 0;
+
+
+    
+}
 .head{
     width:40%;
+    height: 325px;
     
-    padding-left: 0%;
+    box-shadow: 2.5px 2.5px #88d4ab;
+    border-radius: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
 }
 
 .head h1{
@@ -91,35 +124,51 @@ a:hover{
     font-style: oblique;
     text-align:justify;
     
+    
 }
 
-
-.bigimg{
-    max-width:100%;
-    height:300px;
-    padding-right: 50px;
-    border-radius: 15%;
+.logo img{
+    height: 60px;
+    width: 80%;
     
+    padding-right: 3%;
+    border-radius: 50%;
+}
+
+.logo a{
+    font-family: cursive;
+}
+
+#lg{
+    display: flex;
+
 }
 
 .random{
     
-    background-color: rgb(253, 251, 251);
-    padding-bottom: 20px;
+    background-color: #ffffff;
+    padding-bottom: 15px;
+    color: #414040;
     font-size: larger;
     text-transform: capitalize;
-    text-shadow: 10px;
+    text-shadow: 0.5px 0.5px #035353;
     text-align: center;
-    padding-top:10px;
-    
-    
+    padding-top:15px;
+    font-family: cursive;
+    text-transform:capitalize;
+    text-decoration-color: #39493f;
+    outline-color: #78c6a3;
+    border-top: 5px double #3f6d65;
 }
 
 
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 20px;
+    grid-gap: 5px;
+    
+    
+   
 }
 
 .photo-grid figure {
@@ -176,25 +225,40 @@ button{
     height: auto;
     width: 200px;
     padding: 5px 5px 5px 5px;
-    background-color: rgb(147, 147, 179);
+    background-color: rgb(183, 248, 238);
+    margin:0;
+    border: 2px solid #39493f;
+    border-radius: 30%;
     
 }
 
 .info{
-    height:250px;
-    width:100%;
-    background-color: beige;
+    margin: 0%;
+    background-image: url('../git_test/pexe.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-style: italic;
-    font-size: larger;
-    
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 24px;
    
 }
 
 .info p{
-    padding-left: 220px;
-    padding-right: 220px;
-   padding-top: 80px;
+    margin: 80px 90px 40px 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+   padding-top: 10px;
+   border: 3px solid #fff;
+   font-size: 20px;
+   font-style: oblique;
+   
     
 }
 
@@ -230,23 +294,7 @@ footer{
     padding: 40px 150px 20px 150px;
 }
 
-#lg{
-    display: flex;
 
-
-}
-
-.logo img{
-    height: 60px;
-    width: 80%;
-    border: 2px solid black;
-    padding-right: 3%;
-    border-radius: 50%;
-}
-
-.logo a{
-    font-family: cursive;
-}
 
 
 .dropdown{
@@ -268,7 +316,7 @@ footer{
     position: absolute;
     min-width: 110px;
     padding-left: 65px;
-
+    color: #fff;
     z-index: 1;
 
 } 
@@ -276,8 +324,9 @@ footer{
 .dropdown-content a{
     display: block;
     padding: 10px 20px 10px 20px;
-    background-color: rgb(117, 92, 121);
-    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 10%;
 }
 
 
@@ -288,15 +337,13 @@ footer{
 .popup{
     display: none;
     position: fixed;
+    margin: 0%;
     
-    top: 25%;
     left: 30%;
     right: 30%;
-    width: auto;
-    height: 390px;
-    border-radius: 10%;
-    background-color: #190227;
-
+    top: 20%;
+    
+    
 }
 .sp{
     margin-top: 0;
@@ -304,20 +351,18 @@ footer{
     margin: 0;
     padding-bottom: 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     display: block;
     
-    color: rgb(14, 15, 15);
+    color: rgb(0, 0, 0);
     
     
 } 
 .popup-content{
-    
-    height: 400;
-    width: 450px;
-    background-color: rgba(255, 255, 255, 0.637);
-    border-radius: 10%;
-
+    border: 3px solid white;
+    background-color: #f8eeee;
+    border-radius: 30%;
+    color: #000000;
 
 }
 
@@ -325,7 +370,7 @@ footer{
 
 
 .nm, .em , .pw{
-    
+    color: #000000; 
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
@@ -339,13 +384,13 @@ footer{
 
 .popup-content label{
     font-size: larger;
-    color: rgb(17, 17, 17);
+    color: rgb(0, 0, 0);
     margin-left: 70px;
 }
 
 input{
     padding: 10px 20px 10px 20px;
-    background-color: rgb(190, 179, 190);
+    background-color: rgb(255, 255, 255);
     border-radius: 10%;
 
     margin-right: 30px;
@@ -357,8 +402,8 @@ input{
     width: 200px;
     align-self: center;
     margin-left: 135px;
-    background-color: #190227;
+    background-color: #bed3ff;
     margin-bottom: 10px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
